@@ -1,6 +1,6 @@
 let ApplArray = [{
-  name: 'Google',
-  date: '2023-12-28'
+  name: '',
+  date: ''
 }];
 
 if (localStorage.getItem("test1")) {
