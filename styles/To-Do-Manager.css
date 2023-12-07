@@ -1,0 +1,73 @@
+
+.css-first-header{
+  text-align: center;
+  color:bisque;
+  padding: 10px 20px 20px 20px;
+}
+
+.css-main-border{
+  display: inline-block;
+  background-color: rgb(56, 73, 41);
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+
+.css-input,
+.css-data{
+  
+  display: grid;
+  grid-template-columns: 200px 150px 120px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+  font-size: 20px;
+  padding-left: 40px;
+  padding-right: 40px;  
+}
+
+.css-data{
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.css-input{
+  margin-bottom: 10px;
+}
+
+.css-todo,
+.css-date{
+  background-color: bisque;
+  font-size: 15px;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+}
+
+
+.css-Add-button{
+  background-color:rgb(183, 201, 119);
+  color: black;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.css-Delete-button{
+  background-color: rgb(201, 147, 97);
+  color: black;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 20px;
+}

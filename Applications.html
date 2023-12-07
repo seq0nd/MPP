@@ -1,0 +1,45 @@
+<html>
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/Navbar.css">
+  <link rel="stylesheet" href="styles/SocialIconBar.css">
+  <link rel="stylesheet" href="styles/Applications.css">
+</head>
+
+<body class="css-body">
+  <!--Side Bar-->
+  <div class="sidebar">
+    <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="To-Do-Manager.html"><i class="fa-solid fa-calendar-days"></i> To-Do-Manager</a>
+    <a href="Applications.html"><i class="fa-solid fa-business-time"></i> Applications</a>
+  </div>
+
+  <!--Social Icon Bar-->
+  <div class="icon-bar">
+    <a href="https://github.com/seq0nd?tab=repositories" class="github"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/jaroslaw-pakos-8152742a2/" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+
+
+  <!--Applications-->
+  <div class="css-main-border">
+    <h1>My Applications</h1>
+    <div class="css-input">
+      <label class="css-nameCompany">Name of Company: </label>
+      <input type="text" name="company" class="js-input-name css-inputNameCompany">
+      <label class="css-dateApplication">Date of Application: </label>
+      <input type="date" name="dateOfApplication" class="js-input-date css-inputDate">
+      <button onclick="
+      addApplication();
+      "
+      class="css-add">Add </button>
+    </div>
+    <div class="js-data css-data"></div>
+  </div>
+
+ 
+  
+</body>
+    <script src="scripts/Applications.js"></script>
+    <script src="https://kit.fontawesome.com/2a300fd06f.js" crossorigin="anonymous"></script>
+</html>

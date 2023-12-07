@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To-Do-Manager</title>
+    <link rel="stylesheet" href="styles/To-Do-Manager.css">
+    <link rel="stylesheet" href="styles/SocialIconBar.css">
+    <link rel="stylesheet" href="styles/Navbar.css">
+  </head>
+
+  <body class="css-body">
+    <!--Side Bar-->
+    <div class="sidebar">
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="To-Do-Manager.html"><i class="fa-solid fa-calendar-days"></i> To-Do-Manager</a>
+      <a href="Applications.html"><i class="fa-solid fa-business-time"></i> Applications</a>
+    </div>
+
+    <!--Social Icon Bar-->
+    <div class="icon-bar">
+      <a href="https://github.com/seq0nd?tab=repositories" class="github"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/jaroslaw-pakos-8152742a2/" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+
+
+    <!--To Do Manager-->
+    <div class="css-main-border">
+      <h1 class="css-first-header">To-Do-List</h1>
+      <div class="css-input" >
+        <input type="text" class="js-input-todo css-todo" placeholder="To Do">
+        <input type="date" class="js-date css-date" >
+        <button onclick="
+        addToDo();
+        "class ="css-Add-button">Add</button>
+      </div>
+      <div class="js-todos css-data"></div>
+    </div>
+
+
+    <script src="scripts/To-Do-Manager.js"></script>
+    <script src="https://kit.fontawesome.com/2a300fd06f.js" crossorigin="anonymous"></script>
+  </body>
+</html>
