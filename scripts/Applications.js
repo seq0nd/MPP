@@ -1,6 +1,7 @@
 let ApplArray = [{
   name: '',
   date: ''
+  //isChecked: ''
 }];
 
 if (localStorage.getItem("test1")) {
@@ -8,10 +9,10 @@ if (localStorage.getItem("test1")) {
 }
 
 
-
 const renderList = () => {
 
   let ApplArrayHTML = '';
+
 
   ApplArray.forEach(function(applicationObject, index){
     const name = applicationObject.name;
@@ -25,21 +26,22 @@ const renderList = () => {
     renderList();
     "
     class="css-delete">Delete</button>
-    <input type="checkbox" class="css-AbsageChk" id="idCancel">
+    <input type="checkbox" class="css-AbsageChk box" id="idCancel" onclick="">
     <label class="css-Absage">Cancellation</label>
     `;
 
     ApplArrayHTML += html;
   });
 
+
   document.querySelector('.js-data').innerHTML = ApplArrayHTML;
 
   localStorage.setItem("test1", JSON.stringify(ApplArray));
-
- 
 }
 
+
 renderList();
+
 
 const addApplication = () => {
   const inputNameElement = document.querySelector('.js-input-name');
@@ -60,20 +62,29 @@ const addApplication = () => {
 }
 
 
-/*  Should Check if the checkbox is checked if yes it makes a line through  the name and date, to show that it is no longer important 
+ //Should Check if the checkbox is checked if yes it makes a line through  the name and date, to show that it is no longer important 
 
 const checkCancel = () => {
 
-  const checkbox = document.getElementById('idCancel');
-  const name = document.getElementById('idName');
-  const date = document.getElementById('idDate');
+  /*
+  let checkbox = document.getElementById('idCancel').checked;
+  //const name = document.getElementById('idName');
+  //const date = document.getElementById('idDate');
 
-  if(checkbox.checked){
-  
+  if(checkbox === true){
+    ApplArray.push({
+      isChecked: 'true'
+    });
+    checkbox.checked = true;
   }
-  else{
-   
+  else if(checkbox === false){
+    ApplArray.push({
+      isChecked: 'false'
+    });
+    checkbox.checked = false;
   }
+  console.log(ApplArray);
+  console.log(checkbox);
+  */
+
 }
-
-*/
